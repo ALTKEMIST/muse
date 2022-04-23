@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/vendor/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/img/ALTKEMIST_ico.ico" type="image/x-icon">
+
+    <title>Altkemist Muse</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col text-center">
+                <img src="./public/img/BannerA.png" class="w-25" />
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col h4 font-weight-bold mt-5">
+                Let's make some music!
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col font-italic">
+                <div class="btn-group btn-group-lg piano">
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(27.5)">La</div>
+                    <div class="btn btn-dark" onclick="musePiano(29.1353)">La♯</br>Si♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(30.8677)">Si</div>
+                    <!--1era octava-->
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(32.7032)">Do</div>
+                    <div class="btn btn-dark" onclick="musePiano(34.6479)">Do♯</br>Re♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(36.7081)">Re</div>
+                    <div class="btn btn-dark" onclick="musePiano(38.8909)">Re♯</br>Mi♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(41.2035)">Mi</div>
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(43.6536)">Fa</div>
+                    <div class="btn btn-dark" onclick="musePiano(46.2493)">Fa♯</br>Sol♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(48.9995)">Sol</div>
+                    <div class="btn btn-dark" onclick="musePiano(51.9130)">Sol♯</br>La♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(55.0000)">La</div>
+                    <div class="btn btn-dark" onclick="musePiano(58.2705)">La♯</br>Si♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(61.7354)">Si</div>
+                    <!--2da octava-->
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(65.4064)">Do</div>
+                    <div class="btn btn-dark" onclick="musePiano(69.2957)">Do♯</br>Re♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(73.4162)">Re</div>
+                    <div class="btn btn-dark" onclick="musePiano(77.7817)">Re♯</br>Mi♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(82.4069)">Mi</div>
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(87.3071)">Fa</div>
+                    <div class="btn btn-dark" onclick="musePiano(92.4986)">Fa♯</br>Sol♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(97.9989)">Sol</div>
+                    <div class="btn btn-dark" onclick="musePiano(103.826)">Sol♯</br>La♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(110.000)">La</div>
+                    <div class="btn btn-dark" onclick="musePiano(116.541)">La♯</br>Si♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(123.471)">Si</div>
+                    <!--3ra octava-->
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(130.813)">Do</div>
+                    <div class="btn btn-dark" onclick="musePiano(138.591)">Do♯</br>Re♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(146.832)">Re</div>
+                    <div class="btn btn-dark" onclick="musePiano(155.563)">Re♯</br>Mi♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(164.814)">Mi</div>
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(174.614)">Fa</div>
+                    <div class="btn btn-dark" onclick="musePiano(184.997)">Fa♯</br>Sol♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(195.998)">Sol</div>
+                    <div class="btn btn-dark" onclick="musePiano(207.652)">Sol♯</br>La♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(220.000)">La</div>
+                    <div class="btn btn-dark" onclick="musePiano(233.082)">La♯</br>Si♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(246.942)">Si</div>
+                    <!--4ta octava-->
+                    <div class="btn btn-light border border-dark firstKey text-primary font-weight-bold" onclick="musePiano(261.626)">Do</div>
+                    <div class="btn btn-dark" onclick="musePiano(277.183)">Do♯</br>Re♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(293.665)">Re</div>
+                    <div class="btn btn-dark" onclick="musePiano(311.127)">Re♯</br>Mi♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(329.628)">Mi</div>
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(349.228)">Fa</div>
+                    <div class="btn btn-dark" onclick="musePiano(369.994)">Fa♯</br>Sol♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(391.995)">Sol</div>
+                    <div class="btn btn-dark" onclick="musePiano(415.305)">Sol♯</br>La♭</div>
+                    <div class="btn btn-light border border-dark text-danger font-weight-bold" onclick="musePiano(440.000)">La</div>
+                    <div class="btn btn-dark" onclick="musePiano(466.164)">La♯</br>Si♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(493.883)">Si</div>
+                    <!--5ta octava-->
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(523.251)">Do</div>
+                    <div class="btn btn-dark" onclick="musePiano(554.365)">Do♯</br>Re♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(587.330)">Re</div>
+                    <div class="btn btn-dark" onclick="musePiano(622.254)">Re♯</br>Mi♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(659.255)">Mi</div>
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(698.456)">Fa</div>
+                    <div class="btn btn-dark" onclick="musePiano(739.989)">Fa♯</br>Sol♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(783.991)">Sol</div>
+                    <div class="btn btn-dark" onclick="musePiano(830.609)">Sol♯</br>La♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(880.000)">La</div>
+                    <div class="btn btn-dark" onclick="musePiano(932.328)">La♯</br>Si♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(987.767)">Si</div>
+                    <!--6ta octava-->
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(1046.50)">Do</div>
+                    <div class="btn btn-dark" onclick="musePiano(1108.73)">Do♯</br>Re♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(1174.66)">Re</div>
+                    <div class="btn btn-dark" onclick="musePiano(1244.51)">Re♯</br>Mi♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(1318.51)">Mi</div>
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(1396.91)">Fa</div>
+                    <div class="btn btn-dark" onclick="musePiano(1479.98)">Fa♯</br>Sol♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(1567.98)">Sol</div>
+                    <div class="btn btn-dark" onclick="musePiano(1661.22)">Sol♯</br>La♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(1760.00)">La</div>
+                    <div class="btn btn-dark" onclick="musePiano(1864.66)">La♯</br>Si♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(1975.53)">Si</div>
+                    <!--7ma octava-->
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(2093.00)">Do</div>
+                    <div class="btn btn-dark" onclick="musePiano(2217.46)">Do♯</br>Re♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(2349.32)">Re</div>
+                    <div class="btn btn-dark" onclick="musePiano(2489.02)">Re♯</br>Mi♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(2637.02)">Mi</div>
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(2793.83)">Fa</div>
+                    <div class="btn btn-dark" onclick="musePiano(2959.96)">Fa♯</br>Sol♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(3135.96)">Sol</div>
+                    <div class="btn btn-dark" onclick="musePiano(3322.44)">Sol♯</br>La♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(3520.00)">La</div>
+                    <div class="btn btn-dark" onclick="musePiano(3729.31)">La♯</br>Si♭</div>
+                    <div class="btn btn-light border border-dark" onclick="musePiano(3951.07)">Si</div>
+                    <!--8va octava-->
+                    <div class="btn btn-light border border-dark firstKey" onclick="musePiano(4186.01)">Do</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./public/vendor/jquery/jquery-3.5.1.slim.min.js"></script>
+    <script src="./public/vendor/popper/popper.min.js"></script>
+    <script src="./public/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="./public/vendor/tonejs/tone.js"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.container-fluid{
+    max-width: 1000px;
+}
+
+textarea{
+    resize: none;
+    border: #900384 1px solid;
+}
+
+textarea:selected{
+    border: #900384 2px solid;
+}
+.piano{
+    margin: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    overflow-x: auto;
+}
+.piano>.btn{
+    flex: 0 0 auto;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+    box-shadow: inset 0 0 10px 10px white;
+    border: solid 3px white;
+    
+
+}
+::-webkit-scrollbar-thumb {
+    background: #900384;
+    box-shadow: inset 0 0 10px 10px #900384;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    border-radius: 25px;
+  }
+  
+.piano>.btn-light {
+    height: 150px;
+    font-size: 7pt;
+    padding-top: 130px;
+    padding-right: 5pt;
+    padding-left: 5pt;
+    width: 4em;
+    margin:0 0 0 -1em !important;
+    z-index: 1 !important;
+}
+.piano>.firstKey {
+    margin:0 0 0 0 !important;
+}
+
+
+.piano>.btn-dark {
+    height: 110px;
+    font-size: 7pt;
+    padding-top: 80px;
+    padding-left: 2pt;
+    padding-right: 2pt;
+    width: 2em;
+    margin:0 0 0 -1em !important;
+    z-index: 2 !important;
+}
